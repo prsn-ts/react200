@@ -27,7 +27,6 @@ class R027_ComponentClass extends Component {
             <div>
                 <button onClick={e => this.buttonClick('String')}> 문자열 변경</button>
                 <button onClick={e => this.buttonClick('ArrayObject')}> 객체 배열 변경</button>
-                [state 변경하기] StateString : {this.state.StateString}
             </div>
         )
     }
