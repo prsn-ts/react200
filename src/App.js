@@ -1,11 +1,11 @@
 import React from 'react';
-import ReactionClick from './R066_onClick'
+import ReactChange from './R067_onChange'
 
 function App() {
   return (
     <div>
       <h1>Start React 200!</h1>
-      <ReactionClick/>
+      <ReactChange/>
     </div>
   );
 }
