@@ -1,0 +1,30 @@
+import React, { Component } from 'react';
+
+class R073_ReactRef extends Component {
+    constructor(props) {
+        super(props);
+        this.InputRef = React.createRef();
+    }
+
+    RefFocus = (e) => {
+        console.log("RefFocus 동작 : ", this.InputRef.current)
+        this.InputRef.current.focus();
+    }
+
+    JavascriptFocus() {
+        console.log("JavascriptFocus 동작", document.getElementById('id'))
+        document.getElementById('id').focus();
+    }
+
+    render() {
+        return (
+            <>
+                <input id='id' type='text' ref={this.InputRef} />
+                <input type='button' value='Ref Focus' onClick={this.RefFocus} />
+                <input type='button' value='Javascript Focus' onClick={this.JavascriptFocus} />
+            </>
+        )
+    }
+}
+
+export default R073_ReactRef;
