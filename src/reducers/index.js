@@ -20,7 +20,4 @@ const App = combineReducers({
     data
 });
 
-console.log(data);
-console.log(App);
-
 export default App;
