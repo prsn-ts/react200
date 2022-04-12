@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Routes } from 'react-router-dom';
-// import ReactRouter from './R089_reactRouter';
-// import ReactRouter2 from './R089_reactRouter2';
+import ReactDebounce from './R094_reactDebounce';
 
 // css
 import '../css/new.css';
@@ -22,6 +21,7 @@ class App extends Component {
                 <HeaderAdmin />
                 <Routes>
                     <Route path="/" element={<LoginForm />} />
+                    <Route path='/Debounce' element={<ReactDebounce />} />
                 </Routes>
                 <Footer />
             </div>
