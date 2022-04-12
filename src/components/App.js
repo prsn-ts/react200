@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import ReactDebounce from './R094_reactDebounce';
+import ReactThrottle from './R095_reactThrottle';
 
 // css
 import '../css/new.css';
@@ -21,7 +21,7 @@ class App extends Component {
                 <HeaderAdmin />
                 <Routes>
                     <Route path="/" element={<LoginForm />} />
-                    <Route path='/Debounce' element={<ReactDebounce />} />
+                    <Route path='/Throttle' element={<ReactThrottle />} />
                 </Routes>
                 <Footer />
             </div>
