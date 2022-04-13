@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import ReactThrottle from './R095_reactThrottle';
+import FloatingPopulationList from './Floating_population/FloatingPopulationList';
 
 // css
 import '../css/new.css';
@@ -21,7 +21,7 @@ class App extends Component {
                 <HeaderAdmin />
                 <Routes>
                     <Route path="/" element={<LoginForm />} />
-                    <Route path='/Throttle' element={<ReactThrottle />} />
+                    <Route path="/FloatingPopulationList" element={<FloatingPopulationList />} />
                 </Routes>
                 <Footer />
             </div>
